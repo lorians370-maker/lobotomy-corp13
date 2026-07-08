@@ -116,7 +116,7 @@
 				ChangeResistances(list(RED_DAMAGE = 0))
 				movement_volume = 65 // TA-DA!!!
 		if(current_movement_num < 6)
-			sound_to_playing_players_on_level("sound/abnormalities/silentorchestra/movement[current_movement_num].ogg", movement_volume, zlevel = z)
+			sound_to_playing_players_on_level("sound/abnormalities/silentorchestra/SVO.mp3", movement_volume, zlevel = z)
 			if(current_movement_num == 5)
 				for(var/mob/living/carbon/human/H in livinginrange(symphony_range, get_turf(src)))
 					if(H.sanity_lost || (H.sanityhealth < H.maxSanity * 0.5))

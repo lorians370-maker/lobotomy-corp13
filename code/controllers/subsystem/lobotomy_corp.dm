@@ -87,7 +87,7 @@ SUBSYSTEM_DEF(lobotomy_corp)
 	/// The area of effect of manager's bullets; -1 is for direct target only
 	var/manager_bullet_area = -1
 	/// When TRUE - abnormalities can be possessed by ghosts
-	var/enable_possession = FALSE
+	var/enable_possession = TRUE
 	/// Amount of abnormalities that agents achieved full understanding on
 	var/understood_abnos = 0
 	/// The amount of core suppression options that will be available

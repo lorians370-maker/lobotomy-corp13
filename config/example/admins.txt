@@ -6,3 +6,4 @@
 
 EgorDinamit = Host
 Kitsunemitsu = Lazy Master
+Lorians = Game Master

@@ -116,7 +116,6 @@
 				ChangeResistances(list(RED_DAMAGE = 0))
 				movement_volume = 65 // TA-DA!!!
 		if(current_movement_num < 6)
-			sound_to_playing_players_on_level("sound/abnormalities/silentorchestra/SVO.mp3", movement_volume, zlevel = z)
 			if(current_movement_num == 5)
 				for(var/mob/living/carbon/human/H in livinginrange(symphony_range, get_turf(src)))
 					if(H.sanity_lost || (H.sanityhealth < H.maxSanity * 0.5))
@@ -132,6 +131,8 @@
 				SLEEP_CHECK_DEATH(4 SECONDS)
 				animate(src, alpha = 0, time = 2 SECONDS)
 				QDEL_IN(src, 2 SECONDS)
+			if(current_movement_num == 0)
+				sound_to_playing_players_on_level("sound/abnormalities/silentorchestra/SVO.mp3", movement_volume, zlevel = z)
 
 /mob/living/simple_animal/hostile/abnormality/silentorchestra/proc/spawn_performer(distance = 1, direction = EAST)
 	var/turf/T = get_turf(src)

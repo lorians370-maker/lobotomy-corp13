@@ -132,7 +132,16 @@
 				animate(src, alpha = 0, time = 2 SECONDS)
 				QDEL_IN(src, 2 SECONDS)
 			if(current_movement_num == 0)
-				sound_to_playing_players_on_level("sound/abnormalities/silentorchestra/SVO.mp3", movement_volume, zlevel = z)
+				//список доступных треков
+				var/list/songs = list(
+					"sound/abnormalities/silentorchestra/SVO.mp3",
+					"sound/abnormalities/silentorchestra/Zaika.mp3",
+					"sound/abnormalities/silentorchestra/Cat.mp3",
+					"sound/abnormalities/silentorchestra/Pirat.mp3"
+				)
+				var/chosen_song = pick(songs)
+				sound_to_playing_players_on_level(chosen_song, movement_volume, zlevel = z)
+
 
 /mob/living/simple_animal/hostile/abnormality/silentorchestra/proc/spawn_performer(distance = 1, direction = EAST)
 	var/turf/T = get_turf(src)

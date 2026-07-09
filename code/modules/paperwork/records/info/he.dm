@@ -583,3 +583,10 @@
 		"When the work result was Normal, the Qliphoth Counter lowered with a normal probability.",
 		"When the work result was Bad, the Qliphoth Counter lowered.",
 		"When attachment work was completed, Der Fluschutze escaped its Containment Unit.",)
+
+/obj/item/paper/fluff/info/he/lost_bull
+	abno_type = /mob/living/simple_animal/hostile/abnormality/lost_bull
+	abno_code = "N-3O-1"
+	abno_info = list(
+		"Пизды от него получали чаще чем информацию",
+)

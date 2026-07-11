@@ -29,10 +29,8 @@
 	attack_sound = 'sound/abnormalities/ichthys/slap.ogg'
 
 	ego_list = list(
-		/datum/ego_datum/weapon/horns,
-		/datum/ego_datum/armor/horns,
 	)
-	gift_type =  /datum/ego_gifts/horns
+
 	abnormality_origin = ABNORMALITY_ORIGIN_ORIGINAL
 	chem_type = /datum/reagent/abnormality/sin/gloom
 
